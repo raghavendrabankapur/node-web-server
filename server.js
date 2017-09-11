@@ -75,6 +75,14 @@ app.get('/bad',(req, res)=>{
     });
 });
 
+app.get('/projects',(req, res)=>{
+    res.render('projects.hbs', {
+        pageTitle:'Projects page',
+        githubproject:'https://github.com/raghavendrabankapur',
+        gitlabprojects:'https://gitlab.com/ba.raghu'
+    });
+});
+
 app.listen(port, ()=>{
     console.log(`Server is up on port ${port}`);
 });

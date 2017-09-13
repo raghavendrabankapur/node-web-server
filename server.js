@@ -17,17 +17,17 @@ app.set('view engine','hbs');
 
 /* Above line need to be a absolute directory. This can be achieved by using the
 __dirname inbuild property of node. */
-app.use((req, res, next)=>{
-    var now = new Date().toString();
-    var log = `${now}: ${req.method} ${req.url}`
-    console.log(log);
-    // fs.appendFile('server.log', log + '\n', (err)=>{
-    //     if(err){
-    //         console.log('An error occured');
-    //     }
-    // });
-    next();
-});
+// app.use((req, res, next)=>{
+//     var now = new Date().toString();
+//     var log = `${now}: ${req.method} ${req.url}`
+//     console.log(log);
+//     // fs.appendFile('server.log', log + '\n', (err)=>{
+//     //     if(err){
+//     //         console.log('An error occured');
+//     //     }
+//     // });
+//     next();
+// });
 
 
 /* Above code will register a middleware. This will be not be completed untill the next method is called. So

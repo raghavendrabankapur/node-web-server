@@ -5,7 +5,10 @@ const fs = require('fs');
 const port = process.env.PORT || 3000;
 var app = express();
 
-hbs.registerPartials(__dirname + '/views/partials');
+// hbs.registerPartials(__dirname + '/views/partials');
+beforeEach(done => {
+    hbs.registerPartials(__dirname + '/views/partials', done);
+   });
 /* Above line need to be a absolute directory. This can be achieved by using the
 __dirname inbuild property of node. */
 

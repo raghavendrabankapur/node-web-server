@@ -14,6 +14,7 @@
     "hbs": "^4.0.0"
   },
   "devDependencies": {
+    "expect": "^21.0.2",
     "mocha": "^3.5.2",
     "supertest": "^3.0.0"
   }
